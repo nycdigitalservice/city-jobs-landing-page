@@ -1,0 +1,176 @@
+<extends src="./html/base.html">
+  <block name="content">
+    <main class="u-reset stack" id="jobs-2023">
+      <header class="o-header region">
+        <div class="center md:flex gap-9">
+          <div class="md:w-1/2 flow">
+            <h1>NYC is<br>hiring now</h1>
+            <p>There are three ways to get a job with the City:</p>
+            <ul class="text-xs">
+              <li>Find a job online</li>
+              <li>Attend a recruitment event</li>
+              <li>Take a civil service exam</li>
+            </ul>
+          </div>
+          <div class="md:w-1/2 flex flex-col justify-center flow">
+            <form class="search" action="https://a127-jobs.nyc.gov/index_new.html" method="get">
+              <label for="job-search-input" class="sr-only">Search open jobs</label>
+              <input type="search" id="job-search-input" name="keyword" placeholder="Search open jobs">
+              <button type="submit">
+                <span class="sr-only">Search</span>
+                <i class="i-ri:search-line"></i>
+              </button>
+              <button
+                type="button"
+                class="search__clear-input-button"
+                onclick="(() => document.getElementById('job-search-input').value = '')()"
+              >
+                <span class="sr-only">Clear input</span>
+                <i class="i-ri:close-line"></i>
+              </button>
+            </form>
+            <a href="#" class="flex items-center text-md-2">
+              <span class="me-4">View all jobs</span>
+              <i class="i-ri:arrow-right-line"></i>
+            </a>
+          </div>
+        </div>
+      </header>
+      <article class="region">
+        <div class="center md:flex gap-9 flow">
+          <div class="md:w-1/2 flow">
+            <h2 class="inline-block">Work for a better NYC</h2>
+            <p>Get the unmatched security of a government career and make a real difference in your community. As a City employee, you’ll get the chance to make a positive impact on New Yorkers’ lives every day you go to work.</p>
+          </div>
+          <picture class="md:w-1/2 md:!mt-0">
+              <source srcset="./img/work-for-better-nyc.webp" type="image/webp" />
+              <source srcset="./img/work-for-better-nyc .jpg" type="image/jpeg" />
+              <img src="./img/work-for-better-nyc.jpg" width="562" height="375" alt="City employees at a hiring event helping attendees apply for jobs" />
+            </picture>
+          </div>
+        </div>
+      </article>
+      <article class="region flow">
+        <div class="center flow" data-stack-space="l">
+          <h2>Recruitment events</h2>
+          <p>Discover opportunities and learn about civil service. At some events, you can come with a resume and leave with a job.</p>
+        </div>
+        <div class="fb-wrapper">
+          <div class="reel-container full-bleed">
+            <ul class="reel" role="list" id="hiring-events-list"></ul>
+            <div class="reel__nav flex justify-center gap-16 mt-8">
+              <button
+                type="button"
+                class="h-11 w-11 rounded-full bg-black text-white flex justify-center items-center"
+              >
+                <span class="sr-only">Previous</span>
+                <i class="i-ri:arrow-left-line text-lg"></i>
+              </button>
+              <button
+                type="button"
+                class="h-11 w-11 rounded-full bg-black text-white flex justify-center items-center"
+              >
+                <span class="sr-only">Next</span>
+                <i class="i-ri:arrow-right-line text-lg"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="region">
+        <div class="center flow">
+          <h2 class="inline-block">Civil service exams</h2>
+          <picture class="md:float-right md:!mt-0 w-1/2 ms-0 md:ms-9">
+            <source srcset="./img/civil-service-exams.webp" type="image/webp" />
+            <source srcset="./img/civil-service-exams.jpg" type="image/jpeg" />
+            <img src="./img/civil-service-exams.jpg" width="562" height="376" alt="Group of people sitting in the audience at an information session" />
+          </picture>
+          <p>Some City jobs may require you to take an exam, either before or after getting hired. These jobs are classified as competitive on the job board. Signing up for an upcoming exam is a great way to land a new job in your field.</p>
+          <a href="#" class="button" data-variant="primary"><span>About civil service exams</span><i class="i-ri:arrow-right-line"></i></a>
+        </div>
+      </article>
+      <article class="region">
+        <div class="center flow">
+          <h2 class="inline-block">Career programs</h2>
+          <picture class="md:float-left md:!mt-0 w-1/2 pe-0 md:pe-9 box-border">
+            <source srcset="./img/career-programs.webp" type="image/webp" />
+            <source srcset="./img/career-programs.jpg" type="image/jpeg" />
+            <img src="./img/career-programs.jpg" width="549" height="365" alt="Synchronized swim class at a NYC Parks & Recreation pool. Instructor's shirt reads 'Aquatic Specialist, City of New York, Parks & Recreation.'" />
+          </picture>
+          <div class="flow">
+            <p>The City can help you prepare for and connect to work.</p>
+            <p>What are you looking for?</p>
+            <form class="stack w-2/5" target="_blank" method="get" action="https://working.nyc.gov/programs/">
+              <div class="select inline-block">
+                <label class="sr-only" for="program-select">Select programs</label>
+                <select id="program-select" name="wnyc_ser[]" required>
+                  <option selected disabled value="">Select an option</option>
+                  <option value="158">Help with finding work</option>
+                  <option value="14">Job training programs</option>
+                  <option value="17">High school diploma or equivalency (HSE or GED) prep</option>
+                  <option value="18">Help with learning English</option>
+                </select>
+                <i class="i-ri:arrow-down-s-line text-primary"></i>
+              </div>
+              <button type="submit" class="button" data-variant="primary">
+                <span>View programs</span>
+                <i class="i-ri:external-link-line"></i>
+              </a>
+            </form>
+          </div>
+        </div>
+      </article>
+      <article class="region">
+        <div class="center">
+          <div class="stack" data-stack-space="m">
+            <h2>Explore careers</h2>
+            <div class="stack md:w-2/5">
+              <p>See all open jobs at a specific agency:</p>
+              <form id="agency-select-form" class="stack" target="_blank">
+                <div class="select">
+                  <label class="sr-only" for="agency-select">Select an agency</label>
+                  <select id="agency-select" name="" required>
+                    <option>Select an option</option>
+                  </select>
+                  <i class="i-ri:arrow-down-s-line text-primary"></i>
+                </div>
+                <button type="submit" class="button" data-variant="primary">
+                  <span>View agency jobs</span>
+                  <i class="i-ri:external-link-line"></i>
+                </button>
+              </form>
+            </div>
+            <p>Or choose a category to see open positions:</p>
+            <div>
+              <ul role="list" id="job-categories" class="grid" data-layout="1/4">
+                <li>
+                  <a href="#" class="button" data-variant="secondary">
+                    <i class="i-ri:contacts-line"></i>
+                    <span>Administration & Human Resources</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="region">
+        <div class="center flow">
+          <h2 class="inline-block md:w-1/2 md:float-right">Internships and fellowships</h2>
+          <picture
+            class="md:!mt-0 md:float-left inline-block md:w-1/2 pe-0 md:pe-9 box-border"
+          >
+            <source srcset="./img/internships.webp" type="image/webp" />
+            <source srcset="./img/work-for-better-nyc.jpg" type="image/jpeg" />
+            <img src="./img/internships.jpg" width="519" height="408" alt="Person guiding a small tour at Newlab innovation hub" />
+          </picture>
+          <div class="md:w-1/2 md:float-right flow">
+            <p>There are hundreds of opportunities in NYC government for high school students, college students, and recent graduates.</p>
+            <a href="#" class="button" data-variant="primary"><span>Find internships and fellowships</span><i class="i-ri:external-link-line"></i></a>
+          </div>
+        </div>
+      </article>
+    </main>
+  </block>
+</extends>
+<script type="module" src="./main.js"></script>
