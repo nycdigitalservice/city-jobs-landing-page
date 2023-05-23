@@ -20,27 +20,31 @@ const posthtmlPlugin = (opts = {}) => {
   );
   options.sync = false;
 
-  const observer = new PerformanceObserver((items) => {
-    const entries = items.getEntries();
-    const total = entries.find((i) => i.name === 'duration');
-    if (total.duration > 250) {
-      console.error(`PostHTML took ${Math.round(total.duration)}ms to run`);
-    }
+  // const observer = new PerformanceObserver((items) => {
+  //   const entries = items.getEntries();
+  //   const total = entries.find((i) => i.name === 'duration');
+  //   if (total.duration > 250) {
+  //     console.error(`PostHTML took ${Math.round(total.duration)}ms to run`);
+  //   }
 
-    performance.clearMarks();
-  });
-  observer.observe({ entryTypes: ['measure'] });
+  //   performance.clearMarks();
+  // });
+  // observer.observe({ entryTypes: ['measure'] });
 
   return {
     name: 'posthtml',
     enforce: 'pre',
 
-    async transformIndexHtml(input) {
-      performance.mark('start');
-      const { html } = await renderer(plugins || []).process(input, options || {});
-      performance.measure('duration', 'start');
-      console.log(html);
-      return html;
+    transformIndexHtml: {
+      enforce: 'pre',
+      async transform(input) {
+        // performance.mark('start');
+        // console.log(input);
+        const { html } = await renderer(plugins || []).process(input, options || {});
+        // performance.measure('duration', 'start');
+        // console.log(html);
+        return html;
+      }
     },
   };
 };

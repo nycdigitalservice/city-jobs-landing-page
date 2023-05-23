@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>City Careers</title>
 
-    <link href="./iwov-resources/fixed-layout/3-Row Simple.css" type="text/css" rel="stylesheet">
-    <link href="./css/css-min/global.css" media="screen" rel="stylesheet" type="text/css">
-    <link href="./css/css-min/module.css" media="screen" rel="stylesheet" type="text/css">
-    <link href="./css/modules/font-awesome/css/all.css" media="screen" rel="stylesheet" type="text/css">
+    <!-- Preload the LCP image with a high fetchpriority so it starts loading with the stylesheet. -->
+    <link rel="preload" fetchpriority="high" as="image" href="/assets/home/images/jobs/2023/header-bg.webp" type="image/webp">
+
+    <link href="/iwov-resources/fixed-layout/3-Row Simple.css" type="text/css" rel="stylesheet">
+    <link href="/assets/home/css/css-min/global.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="/assets/home/css/css-min/module.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="/assets/home/css/modules/font-awesome/css/all.css" media="screen" rel="stylesheet" type="text/css">
 
     <!-- <link href="https://www.nyc.gov/assets/home/css/pages/cityresources/service.css" media="screen" rel="stylesheet" type="text/css">
          <link href="https://www.nyc.gov/assets/home/css/pages/cityresources/content.css" media="screen" rel="stylesheet" type="text/css"> -->
@@ -17,8 +20,11 @@
     <!-- <link href="https://www.nyc.gov/assets/home/css/pages/jobs/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css"> -->
     <!-- <link href="https://www.nyc.gov/assets/home/css/pages/jobs/flat-ui.css" media="screen" rel="stylesheet" type="text/css"> -->
     <!-- <link href="https://www.nyc.gov/assets/home/css/pages/jobs/core.css" media="screen" rel="stylesheet" type="text/css"> -->
-    <script src="https://www.nyc.gov/assets/home/js/libs/modernizr-2.6.2.min.js" type="text/javascript"></script>
 
+    <link rel="stylesheet" href="./main.css">
+
+    <script src="https://www.nyc.gov/assets/home/js/libs/modernizr-2.6.2.min.js" type="text/javascript"></script>
+    <script src="/assets/home/js/pages/jobs/2023/modernizr-webp.js"></script>
   </head>
   <body id="article">
     <div class="ls-canvas page" id="outer-wrap">
@@ -266,8 +272,8 @@
     <!-- GLOBAL JAVASCRIPT INCLUDES (/js/_global.js.html.erb) -->
     <script src="https://www.nyc.gov/assets/home/js/libs/jquery-1.9.1.js" type="text/javascript">
     </script>
-    <script src="https://www.nyc.gov/assets/home/js/libs/jquery-ui-1.10.1.custom.min.js" type="text/javascript">
-    </script>
+    <script src="https://www.nyc.gov/assets/home/js/libs/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+    <script src="/assets/home/js/libs/papaparse.min.js" type="text/javascript"></script>
     <script src="https://www.nyc.gov/assets/home/js/utils.js" type="text/javascript">
     </script>
     <script src="https://www.nyc.gov/assets/home/js/libs/class.js" type="text/javascript">
@@ -316,39 +322,53 @@
     </script>
     <script src="https://www.nyc.gov/assets/home/js/classes/NYC.StatusUpdate.js" type="text/javascript">
     </script>
-    <script src="./js/classes/NYC.LoadJSTemplate.js" type="text/javascript">
+    <script src="/assets/home/js/classes/NYC.LoadJSTemplate.js" type="text/javascript">
     </script>
-    <script src="https://www.nyc.gov/assets/home/js/classes/NYC.DatePicker.js" type="text/javascript">
-    </script>
-    <script src="https://www.nyc.gov/assets/home/js/classes/NYC.TimeSlider.js" type="text/javascript">
-    </script>
-    <script src="https://www.nyc.gov/assets/home/js/classes/NYC.EventsFilter.js" type="text/javascript">
-    </script>
-    <script src="https://www.nyc.gov/assets/home/js/classes/NYC.EventsSlider.js" type="text/javascript">
-    </script>
-    <script src="https://www.nyc.gov/assets/home/js/classes/NYC.HeroSlideshow.js" type="text/javascript">
-    </script>
-    <script src="https://www.nyc.gov/assets/home/js/classes/NYC.Booker.js" type="text/javascript">
-    </script>
-    <script src="./js/classes/NYC.FindLocalEvents.js" type="text/javascript">
-    </script>
-    <script src="./js/pages/home/home-index.js" type="text/javascript">
-    </script>
+    <!-- <script src="https://www.nyc.gov/assets/home/js/classes/NYC.DatePicker.js" type="text/javascript">
+         </script> -->
+    <!-- <script src="https://www.nyc.gov/assets/home/js/classes/NYC.TimeSlider.js" type="text/javascript">
+         </script> -->
+    <!-- <script src="https://www.nyc.gov/assets/home/js/classes/NYC.EventsFilter.js" type="text/javascript">
+         </script> -->
+    <!-- <script src="https://www.nyc.gov/assets/home/js/classes/NYC.EventsSlider.js" type="text/javascript">
+         </script> -->
+    <!-- <script src="https://www.nyc.gov/assets/home/js/classes/NYC.HeroSlideshow.js" type="text/javascript">
+         </script> -->
+    <!-- <script src="https://www.nyc.gov/assets/home/js/classes/NYC.Booker.js" type="text/javascript">
+         </script> -->
+
+    <!-- <script src="/assets/home/js/classes/NYC.FindLocalEvents.js" type="text/javascript">
+         </script> -->
+    <script src="/assets/home/js/pages/home/home-index.js" type="text/javascript"></script>
     <script src="https://www.nyc.gov/assets/home/js/share.js" type="text/javascript">
     </script>
     <script src="https://www.nyc.gov/assets/home/js/plugins/jquery.modal.min.js" type="text/javascript">
     </script>
-    <script src="https://www.nyc.gov/assets/home/js/pages/jobs/jobs-new.js" type="text/javascript">
-    </script>
+    <!-- <script src="/assets/home/js/pages/jobs/jobs-new.js" type="text/javascript"></script> -->
+
+    <!-- City Jobs 2023 scripts START -->
+    <!-- <script src="/assets/home/js/pages/jobs/2023/components/NYCForm.js" type="text/javascript"></script>
+         <script src="/assets/home/js/pages/jobs/2023/components/NYCClearInputButton.js" type="text/javascript"></script>
+         <script src="/assets/home/js/pages/jobs/2023/components/NYCReel.js" type="text/javascript"></script>
+         <script src="/assets/home/js/pages/jobs/2023/components/NYCEventCard.js" type="text/javascript"></script>
+         <script src="/assets/home/js/pages/jobs/2023/components/NYCEventCardList.js" type="text/javascript"></script>
+         <script src="/assets/home/js/pages/jobs/2023/components/NYCCsv.js" type="text/javascript"></script> -->
+    <!-- City Jobs 2023 scripts END -->
+
     <!-- Google Translate Plugin -->
-    <script type="text/javascript">            function googleTranslateElementInit() {              new google.translate.TranslateElement({                pageLanguage: 'en'              }, 'google_translate_element');            }
+    <script type="text/javascript">
+     function googleTranslateElementInit() {
+       new google.translate.TranslateElement({
+         pageLanguage: 'en'
+       }, 'google_translate_element');
+     }
     </script>
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
     </script>
     <!-- Start Analytics Tagging 5/8/2014 CJ. (NYC.gov Specific) -->
     <!-- google analytics -->
-    <!-- <script type="text/javascript" src="/assets/home/js/google/ga.nycgov.js">
-         </script> -->
+    <script type="text/javascript" src="/assets/home/js/google/ga.nycgov.js">
+    </script>
     <!-- webtrends -->
     <script type="text/javascript" src="https://www.nyc.gov/assets/home/js/webtrends/webtrends.nycgov-load.js">
     </script>
@@ -356,5 +376,6 @@
     <!--
          ls:end[foot-injection] -->
 
+    <script type="module" src="./main.js"></script>
   </body>
 </html>

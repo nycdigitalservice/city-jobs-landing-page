@@ -4,8 +4,10 @@
 @custom-selector :--heading h1, h2, h3, h4, h5, h6;
 
 :root {
-  --nyc-ref-color-blue-100: hsla(213, 53%, 50%, 1);
-  --nyc-ref-color-blue-200: hsla(213, 59%, 45%, 1);
+  /* Reference tokens: set final values */
+  --nyc-ref-color-blue-100: hsla(207, 71%, 68%, 1);
+  --nyc-ref-color-blue-200: hsla(213, 53%, 50%, 1);
+  --nyc-ref-color-blue-300: hsla(213, 59%, 45%, 1);
   --nyc-ref-color-blue-400: hsla(209, 100%, 42%, 1);
   --nyc-ref-color-blue-500: hsla(208, 100%, 30%, 1);
   --nyc-ref-color-blue-600: hsla(212, 75%, 28%, 1);
@@ -16,69 +18,36 @@
   --nyc-ref-color-neutral-0: hsla(0, 0%, 100%, 1);
   --nyc-ref-color-neutral-100: hsla(0, 0%, 93%, 1);
   --nyc-ref-color-neutral-200: hsla(0, 0%, 80%, 1);
-  --nyc-ref-color-neutral-300: hsla(0, 0%, 40%, 1);
-  --nyc-ref-color-neutral-325: hsla(0, 0%, 40%, 0.25);
+  --nyc-ref-color-neutral-300: hsla(0, 0%, 57%, 1);
+  --nyc-ref-color-neutral-400: hsla(0, 0%, 40%, 1);
+  --nyc-ref-color-neutral-425: hsla(0, 0%, 40%, 0.25);
   --nyc-ref-color-neutral-900: hsla(0, 0%, 0%, 1);
   --nyc-ref-color-neutral-920: hsla(0, 0%, 0%, .2);
   --nyc-ref-color-neutral-925: hsla(0, 0%, 0%, .25);
 
 
-  --nyc-ref-gradient-blue-1: linear-gradient(154.62deg, #008FFF 48.25%, #0D4D8B 92.24%);
-  --nyc-ref-gradient-blue-2: linear-gradient(150.06deg, #008FFF -11.53%, #0D4D8B 16.58%, #01194E 53.58%, #000B23 73.72%);
+  --nyc-ref-gradient-blue-1: linear-gradient(154.62deg, #0075D0 48.25%, #0D4D8B 92.24%);
+  --nyc-ref-gradient-blue-2: linear-gradient(150.06deg, #0075D0 -11.53%, #0D4D8B 16.58%, #01194E 53.58%, #000B23 73.72%);
 
-  --nyc-ref-shadow-200: 0px 4px 4px 0px var(--nyc-ref-color-neutral-325);
+  --nyc-ref-shadow-200: 0px 4px 4px 0px var(--nyc-ref-color-neutral-425);
   --nyc-ref-shadow-300: 0px 4px 4px 0px var(--nyc-ref-color-purple-525);
   --nyc-ref-shadow-400: 4px 4px 8px var(--nyc-ref-color-neutral-920);
   --nyc-ref-shadow-450: 0 4px 8px var(--nyc-ref-color-neutral-920);
   --nyc-ref-shadow-500: 0 4px 4px var(--nyc-ref-color-neutral-925);
 
-  --nyc-sys-color-primary: var(--nyc-ref-color-blue-400);
-  --nyc-sys-color-on-primary: var(--nyc-ref-color-neutral-0);
-  --nyc-sys-color-primary-dark: var(--nyc-ref-color-blue-500);
-  --nyc-sys-color-primary-darker: var(--nyc-ref-color-blue-600);
-  --nyc-sys-color-secondary: var(--nyc-ref-color-neutral-100);
-  --nyc-sys-color-secondary-dark: var(--nyc-ref-color-neutral-200);
-  --nyc-sys-color-on-secondary-dark: var(--nyc-ref-color-neutral-0);
-  --nyc-sys-color-tertiary: var(--nyc-ref-color-neutral-900);
-  --nyc-sys-color-on-tertiary: var(--nyc-ref-color-neutral-0);
-  --nyc-sys-color-text: var(--nyc-ref-color-neutral-900);
-  --nyc-sys-color-text-weak: var(--nyc-ref-color-neutral-300);
-  --nyc-sys-color-background: var(--nyc-ref-color-neutral-0);
-  --nyc-sys-color-border: var(--nyc-ref-color-neutral-200);
-  --nyc-sys-gradient-primary: var(--nyc-ref-gradient-blue-1);
-  --nyc-sys-gradient-primary-dark: var(--nyc-ref-gradient-blue-2);
-  --nyc-sys-shadow-primary: var(--nyc-ref-shadow-300);
-  --nyc-sys-shadow-base: var(--nyc-ref-shadow-500);
-  --nyc-sys-shadow-weak: var(--nyc-ref-shadow-400);
-  --nyc-sys-font-size-base: var(--size-step-0);
-  --nyc-sys-font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --nyc-ref-font-family-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-  --nyc-cmp-button-color: var(--nyc-sys-color-text, currentColor);
-  --nyc-cmp-button-color-disabled: var(--nyc-sys-color-on-secondary-dark, currentColor);
-  --nyc-cmp-button-background: var(--nyc-sys-color-background, transparent);
-  --nyc-cmp-button-background-disabled: var(--nyc-sys-color-secondary-dark, transparent);
-  --nyc-cmp-button-shadow: var(--nyc-sys-shadow-base);
-  --nyc-cmp-button-border: 2px solid var(--nyc-sys-color-border);
-
-  --nyc-cmp-input-background: var(--nyc-sys-color-background);
-  --nyc-cmp-input-color: var(--nyc-sys-color-text-weak);
-  --nyc-cmp-input-border: 1px solid var(--nyc-sys-color-border);
-  --nyc-cmp-input-border: 1px solid var(--nyc-sys-color-border);
-  --nyc-cmp-input-font: 400 1rem /3.25 var(--nyc-sys-font-family-base);
-
-  --nyc-cmp-card-background: var(--nyc-sys-gradient-primary, transparent);
-  --nyc-cmp-card-background-hover: var(--nyc-sys-gradient-primary-dark, transparent);
-  --nyc-cmp-card-color: var(--nyc-sys-color-on-primary);
-  --nyc-cmp-card-shadow: var(--nyc-sys-shadow-base);
-
-  --nyc-dimension-page-max-width: 1204px;
+  /* 73.125rem = 1170px */
+  --nyc-ref-dimension-page-max-width: 73.125rem;
 
   --measure: 75ch;
   /* page-max-width: 1170px */
   --page-max-width: 73.125rem;
   --gutter: var(--size-step-0);
 
-/* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1170,24,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+  /* Fluid size tokens, used for font sizes */
+
+  /* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1170,24,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
   /* Step -2: 12.50px → 15.36px */
   --size-step--2: clamp(0.78rem, calc(0.71rem + 0.34vw), 0.96rem);
@@ -89,9 +58,12 @@
   /* Step -1: 16.00px → 20px */
   --size-step--1: clamp(1rem, calc(0.84rem + 0.49vw), 1.25rem);
 
+  /* Step 05: 18.00px → 22.00px */
+  --size-step--05: clamp(1.13rem, calc(0.98rem + 0.71vw), 1.375rem);
   /* Step 0: 18.00px → 24.00px */
   --size-step-0: clamp(1.13rem, calc(0.98rem + 0.71vw), 1.50rem);
-  --size-step-05: clamp(1.13rem, calc(0.98rem + 0.71vw), 1.375rem);
+  /* Step 0: 18.00px → 28.00px */
+  --size-step-05: clamp(1.13rem, calc(0.98rem + 0.71vw), 1.75rem);
 
   /* Step 1: 21.60px → 30.00px */
   --size-step-1: clamp(1.35rem, calc(1.15rem + 0.99vw), 1.88rem);
@@ -108,7 +80,7 @@
   /* Step 5: 44.79px → 73.24px */
   --size-step-5: clamp(2.80rem, calc(2.13rem + 3.35vw), 4.58rem);
 
-/* @link https://utopia.fyi/space/calculator?c=320,18,1.2,1170,24,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+  /* @link https://utopia.fyi/space/calculator?c=320,18,1.2,1170,24,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
   /* Space 3xs: 5px → 6px */
   --space-3xs: clamp(0.31rem, calc(0.29rem + 0.12vw), 0.38rem);
@@ -124,6 +96,7 @@
 
   /* Space m: 27px → 36px */
   /* --space-m: clamp(1.69rem, calc(1.48rem + 1.06vw), 2.25rem); */
+  /* Space m: 24px → 40px */
   --space-m: clamp(1.5rem, calc(1.48rem + 1.06vw), 2.5rem);
 
   /* Space l: 36px → 48px */
@@ -168,20 +141,51 @@
   --space-s-l: clamp(1.13rem, calc(0.42rem + 3.53vw), 3.00rem);
 
   --space: var(--space-m);
-}
 
-/* * { */
-/*   max-inline-size: var(--measure); */
-/* } */
+  /* System tokens: semantic pointers to Reference tokens */
+  --nyc-sys-color-primary: var(--nyc-ref-color-blue-400);
+  --nyc-sys-color-on-primary: var(--nyc-ref-color-neutral-0);
+  --nyc-sys-color-primary-dark: var(--nyc-ref-color-blue-500);
+  --nyc-sys-color-primary-darker: var(--nyc-ref-color-blue-600);
+  --nyc-sys-color-secondary: var(--nyc-ref-color-neutral-100);
+  --nyc-sys-color-secondary-dark: var(--nyc-ref-color-neutral-300);
+  --nyc-sys-color-secondary-darker: var(--nyc-ref-color-neutral-400);
+  --nyc-sys-color-on-secondary-darker: var(--nyc-ref-color-neutral-0);
+  --nyc-sys-color-tertiary: var(--nyc-ref-color-neutral-900);
+  --nyc-sys-color-on-tertiary: var(--nyc-ref-color-neutral-0);
+  --nyc-sys-color-focus: var(--nyc-ref-color-neutral-900);
+  --nyc-sys-color-text: var(--nyc-ref-color-neutral-900);
+  --nyc-sys-color-text-weak: var(--nyc-ref-color-neutral-400);
+  --nyc-sys-color-background: var(--nyc-ref-color-neutral-0);
+  --nyc-sys-color-border: var(--nyc-ref-color-neutral-200);
+  --nyc-sys-gradient-primary: var(--nyc-ref-gradient-blue-1);
+  --nyc-sys-gradient-primary-dark: var(--nyc-ref-gradient-blue-2);
+  --nyc-sys-shadow-primary: var(--nyc-ref-shadow-300);
+  --nyc-sys-shadow-base: var(--nyc-ref-shadow-500);
+  --nyc-sys-shadow-weak: var(--nyc-ref-shadow-400);
+  --nyc-sys-font-size-base: var(--size-step-0);
+  --nyc-sys-font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-/* html, */
-/* body, */
-div,
-header,
-nav,
-main,
-footer {
-  max-inline-size: none;
+  /* Component tokens: Used within specific components, reference system tokens */
+  --nyc-cmp-button-color: var(--nyc-sys-color-text, currentColor);
+  --nyc-cmp-button-color-disabled: var(--nyc-sys-color-on-secondary-darker, currentColor);
+  --nyc-cmp-button-background: var(--nyc-sys-color-background, transparent);
+  --nyc-cmp-button-background-disabled: var(--nyc-sys-color-secondary-dark, transparent);
+  --nyc-cmp-button-shadow: var(--nyc-sys-shadow-base);
+  --nyc-cmp-button-border: 2px solid var(--nyc-sys-color-border);
+
+  --nyc-cmp-input-background: var(--nyc-sys-color-background);
+  --nyc-cmp-input-color: var(--nyc-sys-color-text-weak);
+  --nyc-cmp-input-border: 1px solid var(--nyc-sys-color-border);
+  --nyc-cmp-input-shadow: var(--nyc-sys-shadow-weak);
+  --nyc-cmp-input-font: 400 1rem /3.25 var(--nyc-sys-font-family-base);
+
+  --nyc-cmp-card-background: var(--nyc-sys-gradient-primary, transparent);
+  --nyc-cmp-card-background-hover: var(--nyc-sys-gradient-primary-dark, transparent);
+  --nyc-cmp-card-color: var(--nyc-sys-color-on-primary);
+  --nyc-cmp-card-color-outline: var(--nyc-sys-color-on-primary);
+  --nyc-cmp-card-shadow: var(--nyc-sys-shadow-base);
+
 }
 
 /*
@@ -190,8 +194,15 @@ Global styles
 Low-specificity, global styles that apply to the whole
 project: https://cube.fyi/css.html
  */
-/* body { */
-:--namespace {
+div,
+header,
+nav,
+main,
+footer {
+  max-inline-size: none;
+}
+
+:--jobs {
   color: var(--nyc-sys-color-text);
   background: var(--color-light);
   font-size: var(--nyc-sys-font-size-base);
@@ -237,16 +248,32 @@ select {
   height: auto;
 }
 
-/* p, */
-/* ul { */
-/*   -webkit-appearance: none; */
-/*   appearance: none; */
-/*   box-sizing: border-box; */
-/*   border: 0; */
-/*   color: inherit; */
-/*   margin: 0; */
-/*   padding: 0 */
-/* } */
+/* Global Nav logo Override */
+:root .header-nyc .header-inner .logo .nyc-logo {
+  width: 200px;
+  height: 32px;
+}
+
+:root .main-header .nyc-logo .logo {
+  background: url(/assets/home/images/jobs/2023/jobsnyc-logo.png) no-repeat center center;
+  background-size: contain;
+  width: 200px;
+  height: 32px;
+}
+
+@media screen and (max-width: 915px) {
+  :root .header-nyc .header-inner .header-buttons, .header-nyc .header-inner .slogan {
+    flex-basis: 15%;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  :root .header-nyc .header-inner .logo .nyc-logo,
+  :root .main-header .nyc-logo .logo {
+    width: 150px;
+    height: 32px;
+  }
+}
 
 /* Base typesetting */
 :--heading {
@@ -257,19 +284,19 @@ select {
 }
 
 h1 {
-  font-size: var(--size-step-5);
+  font-size: var(--size-step-5, 2.8rem);
 }
 
 h2 {
-  font-size: var(--size-step-3);
+  font-size: var(--size-step-4, 2.33rem);
 }
 
 h3 {
-  font-size: var(--size-step-2);
+  font-size: var(--size-step-2, 1.62rem);
 }
 
 p {
-  /* max-inline-size: var(--measure); */
+  max-inline-size: var(--measure);
 }
 
 /* Base interactive elements */
@@ -297,6 +324,7 @@ a, button {
 :focus {
   outline: 2px solid;
   outline-offset: 0.3ch;
+  outline-color: var(--nyc-sys-color-focus);
 }
 
 :target {
@@ -327,7 +355,7 @@ select {
   font-size: inherit;
   line-height: 2.25;
   padding-inline: 1rem;
-  /* height: 3rem; */
+  height: 3.375rem;
   background: var(--nyc-cmp-input-background);
   border: var(--nyc-cmp-input-border);
   border-radius: var(--nyc-cmp-input-border-radius, 0);
@@ -367,12 +395,9 @@ to change how empty grid tracks are handled */
   }
 }
 
-.grid > * {
+.grid > li {
   container: grid-item / inline-size;
-}
-
-.center {
-  container: grid-parent / inline-size;
+  display: flex;
 }
 
 .grid[data-layout="1/4"] {
@@ -395,26 +420,44 @@ to change how empty grid tracks are handled */
   }
 }
 
+.grid[data-layout=figure-split] {
+  grid-template-columns: 1fr;
+  --gutter: 0;
+}
+
+@media (min-width: 768px) {
+  .grid[data-layout=figure-split] {
+    --gutter: var(--space-s-m);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "heading figure"
+    "body figure";
+    row-gap: 0;
+
+    & :--heading {
+      grid-area: heading;
+    }
+
+    & .figure {
+      --space: 0;
+      grid-area: figure;
+    }
+
+    & > * {
+      grid-area: body;
+    }
+
+    &[data-split-direction=left] {
+      grid-template-areas:
+      "figure heading"
+      "figure body";
+    }
+  }
+}
+
 [data-gap=m] {
   --gutter: var(--space-m);
 }
-
-/* SIDEBAR */
-/* .with-sidebar { */
-/*   display: flex; */
-/*   flex-wrap: wrap; */
-/*   gap: var(--s1); */
-/* } */
-
-/* .with-sidebar > :first-child { */
-/*   flex-grow: 1; */
-/* } */
-
-/* .with-sidebar > :last-child { */
-/*   flex-basis: 0; */
-/*   flex-grow: 999; */
-/*   min-inline-size: 50%; */
-/* } */
 
 /*
 FLOW UTILITY
@@ -422,7 +465,16 @@ Like the Every Layout stack: https://every-layout.dev/layouts/stack/
 Info about this implementation: https://piccalil.li/quick-tip/flow-utility/
  */
 .flow > * + * {
-  margin-block-start: var(--space-m, 1em);
+  margin-top: 1em;
+  margin-block-start: var(--space, 1em);
+}
+
+[data-flow-space=xs] {
+  --space: var(--space-s);
+}
+
+[data-flow-space=s] {
+  --space: var(--space-s);
 }
 
 /**
@@ -431,8 +483,11 @@ Info about this implementation: https://piccalil.li/quick-tip/flow-utility/
  * Can either be configured by setting --region-space or use a default from the space scale
  */
 .region {
-  padding-block-start: var(--region-space, var(--space-l-xl));
-  padding-block-end: var(--region-space, var(--space-l-xl));
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+  padding-block-start: var(--region-space, var(--space-l-xl, 2.25rem));
+  padding-block-end: var(--region-space, var(--space-l-xl, 2.25rem));
+  clear: both;
 }
 
 .region[data-region-space="s"] {
@@ -451,37 +506,11 @@ Info about this implementation: https://piccalil.li/quick-tip/flow-utility/
   --region-space: var(--space-s-m);
 }
 
-.stack {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.stack > * {
-  margin-block: 0;
-}
-
-.stack > * + * {
-  margin-block-start: var(--space, 1em);
-}
-
-[data-stack-space=s] {
-  --space: var(--space-s);
-}
-
-[data-stack-space=m] {
-  --space: var(--space-m);
-}
-
-[data-stack-space=l] {
-  --space: var(--space-l);
-}
-
 /* Centering */
 
 .page-max {
   margin-inline: auto;
-  max-width: var(--nyc-dimension-page-max-width);
+  max-width: var(--page-max-width);
 }
 
 .center {
@@ -494,42 +523,6 @@ Info about this implementation: https://piccalil.li/quick-tip/flow-utility/
 }
 
 
-/* LAYOUT - Switcher */
-.switcher {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-s-m);
-  container: switcher / inline-size;
-}
-
-.switcher > * {
-  flex-grow: 1;
-  flex-basis: calc(( 40rem - 100%) * 999);
-}
-
-.switcher > :nth-last-child(n+ 4),
-.switcher > :nth-last-child(n+ 4) ~ * {
-  flex-basis: 100%;
-}
-
-[data-col-layout="1-3-2"] {
-  & :nth-child(2) {
-    order: 3;
-  }
-
-  & :nth-child(3) {
-    flex-grow: 2;
-  }
-}
-
-@container switcher (max-width: 40rem) {
-  [data-col-layout="1-3-2"] {
-    & :nth-child(2) {
-      order: initial;
-    }
-  }
-}
-
 /* Layout - Reel */
 .reel {
   display: flex;
@@ -538,21 +531,11 @@ Info about this implementation: https://piccalil.li/quick-tip/flow-utility/
   overflow-y: hidden;
   scrollbar-color: #ccc transparent;
   scroll-behavior: smooth;
-  /* border-style: solid; */
-  /* border-width: 2px; */
-
-  /* &::after { */
-  /*   content: ''; */
-  /* flex-basis: 1rem; */
-  /* flex-shrink: 0; */
-  /* } */
 }
 
 .reel > * {
   flex: 0 0 auto;
   display: flex;
-  /* margin: 1rem; */
-  /* margin-inline-end: 0; */
 }
 
 
@@ -568,24 +551,49 @@ Info about this implementation: https://piccalil.li/quick-tip/flow-utility/
 
 .reel.overflowing {
   padding-block-end: 1rem;
+
+  & ~ .reel__nav {
+    visibility: visible;
+  }
 }
 
 .reel::-webkit-scrollbar {
-  block-size: 1rem;
+  block-size: .5rem;
 }
 
 .reel::-webkit-scrollbar-track {
-  background-color: #000;
+  background-color: transparent;
 }
 
 .reel::-webkit-scrollbar-thumb {
   background-color: #ccc;
-border-radius: 10px;
+  border-radius: 10px;
   background-image: linear-gradient(tranparent 0, transparent 0.25rem, #ccc 0.25rem, #ccc 0.75rem, transparent 0.75rem);
 }
 
+.reel__nav {
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.reel__nav button {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 9999px;
+  justify-content: center;
+  touch-action: none;
+  box-shadow: none;
+
+  /* TODO refactor how buttons deal with icons */
+  & i:last-child {
+    margin: 0;
+  }
+}
+
 /* Full-bleed right */
-.fb-wrapper {
+.center--full-bleed-right {
   display: grid;
   grid-template-columns: 1fr min(calc( var( --page-max-width ) + var(--gutter) ), 100%) 1fr;
   padding-inline-start: var(--gutter);
@@ -603,8 +611,9 @@ border-radius: 10px;
 /* BLOCK - Button */
 .grid li > .button {
   display: flex;
-  height: 100%;
-box-sizing: border-box;
+  width: 100%;
+  /* height: 100%; */
+  /* box-sizing: border-box; */
 }
 
 .button {
@@ -621,18 +630,12 @@ box-sizing: border-box;
   justify-content: space-between;
   transition: all 0.3s ease;
 
-  /* & > span:last-child { */
-  /*   flex-grow: 1; */
-  /* } */
-
+  /* TODO refactor how buttons deal with icons */
   & > i:last-child {
     flex-shrink: 0;
+    margin-left: 3rem;
     margin-inline-start: var(--space-s-l);
     margin-block: auto;
-  }
-
-  & > i:first-child {
-    /* margin-inline-end: 1rem; */
   }
 
   &[disabled] {
@@ -664,6 +667,25 @@ box-sizing: border-box;
 .button[data-variant="secondary"] {
   --nyc-cmp-button-background: var(--nyc-sys-color-secondary);
   font-size: 1rem;
+
+  &:hover {
+    --nyc-cmp-button-background: var(--nyc-sys-color-secondary-dark);
+  }
+
+  &:active,
+  &:visited {
+    --nyc-cmp-button-background: var(--nyc-sys-color-secondary-darker);
+    --nyc-cmp-button-color: var(--nyc-sys-color-on-secondary-darker);
+  }
+}
+
+.button[data-variant="tertiary"] {
+  --nyc-cmp-button-background: var(--nyc-sys-color-tertiary);
+  --nyc-cmp-button-color: var(--nyc-sys-color-on-tertiary);
+
+  &:hover {
+    --nyc-cmp-button-background: var(--nyc-sys-color-primary);
+  }
 }
 
 .button[data-variant="tile"] {
@@ -714,30 +736,16 @@ box-sizing: border-box;
   }
 }
 
-/* TODO: address 900px hard-coded value */
-@container grid-parent (max-width: 900px) {
-.grid[data-layout="1/4"] {
-    /* Bump min-size to ~300px to force 2 col layout */
-  /* --grid-min-item-size: 18.75rem; */
-  --grid-min-item-size: 18rem;
-  }
-  .button[data-variant="tile"] {
-    /* aspect-ratio: 1 / .8; */
-    > :last-child {
-      align-items: center;
-      margin-block-start: 0;
-    }
-  }
-}
-
 /* BLOCK - Select */
 
 .select {
   position: relative;
+  display: flex;
 
   & select {
     padding-inline-end: 3rem;
     width: 100%;
+    box-shadow: var(--nyc-sys-shadow-weak);
   }
 
   & i {
@@ -752,42 +760,61 @@ box-sizing: border-box;
 /* BLOCK - Header */
 
 .o-header {
-  background: url(./img/header-bg.svg) no-repeat center center;
+  background: #0070D7 url(/assets/home/images/jobs/2023/header-bg.svg) no-repeat center center;
+  background-image: url(/assets/home/images/jobs/2023/header-bg.webp);
   background-size: cover;
   color: var(--nyc-sys-color-on-primary);
+
+  & :focus {
+    outline-color: var(--nyc-sys-color-on-primary);
+  }
 
   & :--heading {
     color: var(--nyc-sys-color-on-primary);
   }
 }
 
+:root .no-webp .o-header {
+  background-image: url(/assets/home/images/jobs/2023/header-bg.png) !important;
+}
+
 /* BLOCK - Search */
 
-.search {
+.form[data-variant=search] {
   display: flex;
   position: relative;
   width: 100%;
   & input[type="search"] {
     flex-grow: 1;
     transition: padding 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: var(--nyc-ref-shadow-450);
     &:focus {
-      padding-inline-start: 2.25rem;
-      & ~ .search__clear-input-button {
+      padding-inline-end: 2.25rem;
+      outline-color: var(--nyc-sys-color-on-primary);
+      & ~ nyc-clear-input-button {
         opacity: 1;
         pointer-events: auto;
       }
     }
   }
   & button[type="submit"] {
-    background: var(--nyc-sys-color-tertiary);
-    color: var(--nyc-sys-color-on-tertiary);
-    padding-inline: 1.25rem;
+    padding-inline: .91rem;
+    padding-block: 0;
+    border-radius: 0;
+    /* box-shadow: none; */
+
+    & i {
+      font-size: 1.25rem;
+      margin: 0;
+    }
   }
 }
 
-.search__clear-input-button {
+.form-group nyc-clear-input-button {
   position: absolute;
-  left: 0;
+  right: 0;
   top: 0;
   height: 100%;
   opacity: 0;
@@ -795,17 +822,38 @@ box-sizing: border-box;
   transition: opacity 0.3s ease;
   background: transparent;
   color: var(--nyc-cmp-input-color);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  &:focus {
+    opacity: 1;
+  }
+
+  &:not(:defined) {
+    visibility: hidden;
+  }
+}
+
+/* BLOCK - Form */
+.form, nyc-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex-grow: 1;
+  position: relative;
 }
 
 /* Utilities */
 
-.strong {
-  font-weight: 700;
-}
-
 .background-primary {
   background-color: var(--nyc-sys-color-primary);
   color: var(--nyc-sys-color-on-primary);
+}
+
+.background-secondary {
+  background-color: var(--nyc-sys-color-secondary);
 }
 
 .background-base {
@@ -819,12 +867,163 @@ box-sizing: border-box;
 
 .text-xs {
   font-size: var(--size-step--1);
+  line-height: 1.2em;
 }
 
 .text-md-2 {
-  font-size: var(--size-step-05);
+  font-size: var(--size-step--05);
 }
 
 .text-primary {
   color: var(--nyc-sys-color-primary);
+}
+
+.ie-only {
+  display: none;
+}
+
+@media screen and (-ms-high-contrast: active),
+screen and (-ms-high-contrast: none) {
+  /* IE10+ specific styles go here */
+  .ie-only {
+    display: block;
+  }
+
+  :--jobs {
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 4.58rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  .text-xs {
+    font-size: 1.25rem;
+  }
+
+  .flow > * + * {
+    margin-top: 2.5rem;
+  }
+
+  .region {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+
+
+  .grid[data-layout="1/4"] {
+    display: inline;
+    > * {
+      display: inline-block;
+      width: 22%;
+      height: 4.75rem;
+      margin-right: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    > li:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+
+  .grid > li > .button {
+    height: 100%;
+  }
+
+  .select select {
+    padding-right: 0;
+  }
+
+  .center--full-bleed-right {
+    max-width: var(--page-max-width);
+    width: 100%;
+    margin-top: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+  }
+
+  .button[data-variant=primary] {
+    background: var(--nyc-sys-color-primary);
+    color: var(--nyc-sys-color-on-primary);
+  }
+
+  .button[data-variant=secondary] {
+    background: var(--nyc-sys-color-secondary);
+    color: var(--nyc-sys-color-on-secondary);
+  }
+
+  .search-button-label {
+    position: relative;
+    width: 100px;
+    font-size: 18px;
+    color: white;
+    height: 54px;
+    margin:0;
+    clip: unset;
+  }
+
+  [class*="i-ri:"] {
+    display: none;
+  }
+}
+
+@media not all and (min-resolution:.001dpcm) {
+  @supports (-webkit-appearance:none) and (not (stroke-color:transparent)) {
+    /* Safari 10.1 specific styles go here */
+    :--jobs {
+      font-size: 1.5rem;
+    }
+
+    h1 {
+      font-size: 4.58rem;
+    }
+
+    h2 {
+      font-size: 3rem;
+    }
+
+    .text-xs {
+      font-size: 1.25rem;
+    }
+
+
+    .flow > * + * {
+      margin-top: 2.5rem;
+    }
+
+    .region {
+      padding-top: 4.5rem;
+      padding-bottom: 4.5rem;
+    }
+
+    .reel__nav button {
+      display: block;
+      margin: 0 3rem;
+    }
+
+    .button > i:last-child {
+      margin-left: 3rem;
+    }
+
+    .grid[data-layout="1/4"] {
+      grid-template-columns: repeat(auto-fit, 350px);
+      > * {
+        margin-right: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    .center--full-bleed-right {
+      grid-template-columns: 1fr minmax(var(--page-max-width), 1fr) 1fr;
+      /* grid-template-columns: 1fr min(calc( var( --page-max-width ) + var(--gutter) ), 100%) 1fr; */
+    }
+
+    .md\:gap-10 > * + *{
+      margin-left: 2.5rem;
+    }
+  }
 }

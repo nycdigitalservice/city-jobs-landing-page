@@ -1,0 +1,5 @@
+@media screen and (max-width: 915px) {
+  .nav-mobile {
+    display: none !important;
+  }
+}

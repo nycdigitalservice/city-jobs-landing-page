@@ -1,306 +1,306 @@
 export default [
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=008",
+        value: "008",
         name: "Office of the Actuary (NYCOA)"
     },
     {
-        url: "https://www1.nyc.gov/site/oata/careers/careers.page",
+        value: "https://www1.nyc.gov/site/oata/careers/careers.page",
         name: "Office of Administrative Tax Appeals (OATA)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=820",
+        value: "820",
         name: "Office of Administrative Trials &amp; Hearings (OATH)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=125",
+        value: "125",
         name: "Department for the Aging (NYC Aging)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=011",
+        value: "011",
         name: "Borough President - Bronx"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=010",
+        value: "010",
         name: "Borough President - Manhattan"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=013",
+        value: "013",
         name: "Borough President - Queens"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=810",
+        value: "810",
         name: "Department of Buildings (DOB)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=831",
+        value: "831",
         name: "Business Integrity Commission (BIC)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=004",
+        value: "004",
         name: "Campaign Finance Board (CFB)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=067",
+        value: "067",
         name: "Administration for Children's Services (ACS)"
     },
     {
-        url: "http://cuny.jobs",
+        value: "https://cuny.jobs",
         name: "City University of New York (CUNY)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=313",
+        value: "313",
         name: "Office of Collective Bargaining (OCB)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=015",
+        value: "015",
         name: "Office of the Comptroller"
     },
     {
-        url: "http://www1.nyc.gov/site/marshals/applicants/applicants.page",
+        value: "https://www.nyc.gov/site/marshals/applicants/applicants.page",
         name: "Mayor's Committee on City Marshals"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=030",
+        value: "030",
         name: "Department of City Planning (DCP)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=868",
+        value: "868",
         name: "Department of Citywide Administrative Services (DCAS)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=134",
+        value: "134",
         name: "Civil Service Commission (CSC)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=054",
+        value: "054",
         name: "Civilian Complaint Review Board (CCRB)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=312",
+        value: "312",
         name: "Conflicts of Interest Board (COIB)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=082",
+        value: "082",
         name: "Mayor's Office of Contract Services (MOCS)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=866",
+        value: "866",
         name: "Department of Consumer and Worker Protection (DCWP)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=072",
+        value: "072",
         name: "Department of Correction (DOC)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=073",
+        value: "073",
         name: "Board of Correction (BOC)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=126",
+        value: "126",
         name: "Department of Cultural Affairs (DCLA)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=850",
+        value: "850",
         name: "Department of Design &amp; Construction (DDC)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=902",
+        value: "902",
         name: "District Attorney - Bronx"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=903",
+        value: "903",
         name: "District Attorney - Brooklyn"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=905",
+        value: "905",
         name: "District Attorney - Staten Island"
     },
     {
-        url: "http://www.nycedc.com/careers",
+        value: "https://www.nycedc.com/careers",
         name: "Economic Development Corporation (EDC)"
     },
     {
-        url: "https://schools.nyc.gov/careers",
+        value: "https://schools.nyc.gov/careers",
         name: "Department of Education (DOE)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=017",
+        value: "017",
         name: "Office of Emergency Management (EM)"
     },
     {
-        url: "https://www.nycers.org/career-opportunities",
+        value: "https://www.nycers.org/career-opportunities",
         name: "Employees' Retirement System (NYCERS)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=826",
+        value: "826",
         name: "Department of Environmental Protection (DEP)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=133",
+        value: "133",
         name: "Equal Employment Practices Commission (EEPC)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=836",
+        value: "836",
         name: "Department of Finance (DOF)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=127",
+        value: "127",
         name: "Financial Information Services Agency (FISA)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=057",
+        value: "057",
         name: "Fire Department (FDNY)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=257",
+        value: "257",
         name: "NYC Fire Pension Fund"
     },
     {
-        url: "https://www.nychealthandhospitals.org/careers/",
+        value: "https://www.nychealthandhospitals.org/careers/",
         name: "Health + Hospitals (HHC)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=816",
+        value: "816",
         name: "Department of Health &amp; Mental Hygiene (DOHMH)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=071",
+        value: "071",
         name: "Department of Homeless Services (DHS)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=996",
+        value: "996",
         name: "New York City Housing Authority (NYCHA)"
     },
     {
-        url: "http://www.nychdc.com/Join%20Us",
+        value: "https://www.nychdc.com/Join%20Us",
         name: "New York City Housing Development Corporation (HDC)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=806",
+        value: "806",
         name: "Department of Housing Preservation &amp; Development (HPD)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=069",
+        value: "069",
         name: "Department of Social Services/Human Resources Administration (DSS/HRA)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=226",
+        value: "226",
         name: "Commission on Human Rights (CCHR)"
     },
     {
-        url: "http://www.ibo.nyc.ny.us/",
+        value: "https://www.ibo.nyc.ny.us/",
         name: "Independent Budget Office (IBO)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=032",
+        value: "032",
         name: "Department of Investigation (DOI)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=858",
+        value: "858",
         name: "Office of Technology &amp; Innovation (OTI)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=214",
+        value: "214",
         name: "Office of Labor Relations (OLR)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=136",
+        value: "136",
         name: "Landmarks Preservation Commission (LPC)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=025",
+        value: "025",
         name: "Law Department (LAW)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=019",
+        value: "019",
         name: "Office of Management &amp; Budget (OMB)"
     },
     {
-        url: "https://www.bit.ly/nycmojobs",
+        value: "https://www.bit.ly/nycmojobs",
         name: "Mayor's Office (MO)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=846",
+        value: "846",
         name: "Department of Parks &amp; Recreation (DPR)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=131",
+        value: "131",
         name: "Office of Payroll Administration (OPA)"
     },
     {
-        url: "https://www1.nyc.gov/site/nypd/careers/careers.page",
+        value: "https://www1.nyc.gov/site/nypd/careers/careers.page",
         name: "Police Department (NYPD)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=256",
+        value: "256",
         name: "Police Pension Fund (PPF)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=781",
+        value: "781",
         name: "Department of Probation (DOP)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=943",
+        value: "943",
         name: "Public Administrator - Kings County"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=941",
+        value: "941",
         name: "Public Administrator - New York County"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=942",
+        value: "942",
         name: "Public Administrator - Bronx"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=860",
+        value: "860",
         name: "Department of Records &amp; Information Services (DORIS)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=827",
+        value: "827",
         name: "Department of Sanitation (DSNY)"
     },
+    // {
+    //     value: "http://www.nycsca.org/Careers/Pages/Employment.aspx",
+    //     name: "School Construction Authority (SCA)"
+    // },
     {
-        url: "http://www.nycsca.org/Careers/Pages/Employment.aspx",
-        name: "School Construction Authority (SCA)"
-    },
-    {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=801",
+        value: "801",
         name: "Department of Small Business Services (SBS)"
     },
     {
-        url: "https://www1.nyc.gov/site/bsa/about/employment-opportunities.page",
+        value: "https://www1.nyc.gov/site/bsa/about/employment-opportunities.page",
         name: "Board of Standards and Appeals (BSA)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=021",
+        value: "021",
         name: "Tax Commission"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=156",
+        value: "156",
         name: "Taxi &amp; Limousine Commission (TLC)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=041",
+        value: "041",
         name: "Teachers' Retirement System (TRS)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=841",
+        value: "841",
         name: "Department of Transportation (DOT)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=063",
+        value: "063",
         name: "Department of Veterans' Services (DVS)"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=185",
+        value: "185",
         name: "Municipal Water Finance Authority"
     },
     {
-        url: "https://a127-jobs.nyc.gov/index_new.html?agency=261",
+        value: "261",
         name: "Department of Youth &amp; Community Development (DYCD)"
     },
     {
-        url: "https://nycsci.org/employment/",
+        value: "https://nycsci.org/employment/",
         name: "The Special Commissioner of Investigation"
     }
 ]
