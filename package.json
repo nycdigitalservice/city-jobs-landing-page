@@ -9,8 +9,6 @@
     "preview": "vite preview",
     "cypress:run": "cypress run --headless --browser chrome",
     "cypress:open": "cypress open",
-    "wdio:create": "wdio create",
-    "wdio": "wdio run ./wdio.conf.js"
   },
   "devDependencies": {
     "@babel/core": "^7.21.4",

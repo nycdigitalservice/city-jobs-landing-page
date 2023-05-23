@@ -14,7 +14,6 @@ class NYCReel extends HTMLElement {
             </button>
         </div>
     `;
-    console.log('hey');
 
     this.scrollAmount = 0;
   }
