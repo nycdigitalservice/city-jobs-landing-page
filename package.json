@@ -8,7 +8,7 @@
     "build": "tsc && vite build --emptyOutDir",
     "preview": "vite preview",
     "cypress:run": "cypress run --headless --browser chrome",
-    "cypress:open": "cypress open",
+    "cypress:open": "cypress open"
   },
   "devDependencies": {
     "@babel/core": "^7.21.4",
